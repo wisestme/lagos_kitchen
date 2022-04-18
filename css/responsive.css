@@ -1,5 +1,11 @@
-@media screen and  (min-width: 800px) {
+@media screen and  (min-width: 900px) {
 .no_display_large {
 	display: none;
+}
+
+.no_display_small {
+	display: inline;
+	position: absolute;
+	margin-right: 20px;
 }
 }

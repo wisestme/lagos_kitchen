@@ -105,3 +105,18 @@ navItems.forEach((navItem) => {
 
   });
 })
+
+/* Hero slider */
+var swiper = new Swiper('.hero_image', {
+    effect: 'fade',
+    speed: 1500,
+    autoplay: true,
+    grabCursor: true,
+    cubeEffect: {
+        shadow: false
+    },
+    pagination: {
+        el: '.hero_pagination',
+        clickable: true
+    },
+});

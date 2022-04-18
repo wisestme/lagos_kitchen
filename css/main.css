@@ -80,6 +80,21 @@ body{
 	display: none;
 }
 
+.flex {
+	display: flex;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.7;
+	z-index: 3;
+}
+
 /*------ Header  ------------------------------------------------*/
 
 .logo-holder {
@@ -97,7 +112,7 @@ body{
 
 .logo-vis {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   transition: all 300ms linear;
 }
 
@@ -110,7 +125,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
   opacity: 0;
   transition: all 300ms linear;
   opacity: 0;
@@ -127,6 +142,7 @@ img {
   top: 0;
 	background-color: #fff;
 	width: 100%;
+	z-index: 10;
 }
 
 .logo-sticky  img.logo-vis {
@@ -142,6 +158,10 @@ header.sticky .header-inner:before , header.flat-header .header-inner:before {
 header.sticky .header-inner {
 	top:-40px;
 	padding:25px 0;
+}
+
+header.sticky .nav-holder a {
+	color: #000;
 }
 
 li {
@@ -188,6 +208,21 @@ li {
 	transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+.nav-holder nav {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	z-index: 3;
+}
+
+.nav-holder nav li {
+	margin-right: 1.5rem;
+}
+
+.nav-holder nav a {
+	color: #fff;
+}
+
 /* Navigation Modal */
 .soon_modal, .navigation_modal {
 	width: 100vw;
@@ -200,7 +235,7 @@ li {
 	background: var(--primary_varaint);
 	color: var(--light);
 	transition: 0.5s;
-	z-index: 1;
+	z-index: 4;
 }
 
 .navigation_modal > .container {
@@ -215,14 +250,11 @@ li {
 .navigation_modal nav {
 	width: 100vw;
 	/* flex-direction: column; */
-	height: 100%;
+	height: 70%;
 }
 
 nav ul {
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: stretch;
 	list-style: none;
 	height: 80%;
 }
@@ -301,7 +333,7 @@ opacity: 1;
 	width: 100%;
 	justify-content: space-evenly;
 	align-items: center;
-	height: 20%;
+	height: 30%;
 }
 
 /* Slide in animation with delay for each nav item */
@@ -365,6 +397,52 @@ opacity: 1;
 			transform: translateX(-100%);
 	}
 }
+
+/* Main */
+/* Hero */
+#hero > .container {
+	width:100%;
+	position: absolute;
+	z-index:2;
+	float:left;
+	height:100%;
+}
+
+.hero_image {
+	height: 100%;
+}
+
+.bg1 {
+	background: url(../images/hero/hero_1.jpg);
+}
+
+.bg2 {
+	background: url(../images/hero/hero_2.jpg);
+}
+
+.bg3 {
+	background: url(../images/hero/hero_3.jpg);
+}
+
+.bg4 {
+	background: url(../images/hero/hero_4.jpg);
+}
+
+.bg5 {
+	background: url(../images/hero/hero_5.jpg);
+}
+
+.bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border: 2px solid red;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
 /* header{
 	position:fixed;
 	top:0;
