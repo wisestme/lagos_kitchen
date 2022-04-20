@@ -28,6 +28,20 @@ $(window).scroll(function() {
   }
 });
 
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 700) {
+        $("main").addClass("hero_sticky");
+        // setTimeout(function() {
+        //     $(".logo-holder").addClass("logo-sticky");
+        // }, 350);
+    } else {
+        $("main").removeClass("hero_sticky");
+        // setTimeout(function() {
+        //     $(".logo-holder").removeClass("logo-sticky");
+        // }, 350);
+    }
+  });
+
 
 // // Hamburger Menu
 // // on click

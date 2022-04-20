@@ -465,9 +465,21 @@ main {
 	height:100%;
 }
 
+#hero .overlay,
+.swiper-wrapper {
+	position: fixed;
+}
+
+.hero_sticky #hero .overlay,
+.hero_sticky .swiper-wrapper {
+	position: sticky;
+	scroll-behavior: smooth;
+}
+
 .hero_image {
 	height: 100%;
 }
+
 
 .bg1 {
 	background: url(../images/hero/hero_1.jpg);
