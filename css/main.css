@@ -31,7 +31,7 @@ body{
 	font-weight: 400;
 	font-size: 12px;
 	color: #fff;
-	background-color:#191919;
+	background-color: #000;
 	height:100%;
 	text-align:center;
 }
@@ -82,6 +82,10 @@ body{
 
 .flex {
 	display: flex;
+}
+
+.grid {
+	display: grid;
 }
 
 .overlay {
@@ -272,6 +276,7 @@ li {
 
 .navigation_modal > .container {
 	height: 100vh;
+	
 }
 
 .nav_modal_show,
@@ -282,7 +287,22 @@ li {
 .navigation_modal nav {
 	width: 100vw;
 	/* flex-direction: column; */
-	height: 70%;
+	height: 70vh;
+	z-index: 3;
+}
+
+.nav_modal_background {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url(../images/hero/hero_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.08;
+	background-position: center;
+	z-index: 2;
 }
 
 nav ul {
@@ -434,8 +454,11 @@ opacity: 1;
 
 /* Main */
 /* Hero */
+main {
+	background-color: var(--on_primary);
+}
 #hero > .container {
-	width:100%;
+	width: 100vw;
 	position: absolute;
 	z-index:2;
 	float:left;
@@ -573,6 +596,85 @@ opacity: 1;
 	right: -60px;
 }
 
+/* FOOTER */
+footer {
+	float: left;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+	background: #191919;
+}
+
+footer:before {
+	content: '';
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	margin-left: -40px;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	/* background: #191919; */
+	background: #fff;
+}
+
+footer:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+}
+
+.footer_upper > .container {
+	flex-direction: column;
+	margin-top: 4rem;
+}
+
+.footer_upper > .container > div {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+	top: -70px;
+	left: 20px;
+}
+
+.footer_info img {
+	width: 200px;
+	/* position: relative;
+	right: 30px;
+	bottom: 90px */
+}
+
+.footer_info p {
+	font-size: 16px;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 26px;
+	margin-left: 10px;
+}
+
+.footer_social {
+	height: 100%;
+}
+.footer_social_background {
+	background: url(../images/hero/hero_3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+	border-radius: 15px;
+	height: 100%;
+	opacity: 0.02;
+}
 /* header{
 	position:fixed;
 	top:0;
