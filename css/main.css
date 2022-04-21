@@ -491,12 +491,12 @@ main {
 }
 
 #hero .overlay,
-.swiper-wrapper {
+.hero_swiper {
 	position: fixed;
 }
 
 .hero_sticky #hero .overlay,
-.hero_sticky .swiper-wrapper {
+.hero_sticky .hero_swiper {
 	position: sticky;
 	scroll-behavior: smooth;
 	transition: 3s;
@@ -639,13 +639,31 @@ main {
 	height: 100vh;
 	z-index: 3;
 	position: relative;
-	border: 2px solid red;
 	background-color: #168000;
+}
+
+#about .container {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+#about .container > div > * {
+	width: 50%;
+	height: 100%;
+}
+
+#about .container > div {
+	align-items: center;
+}
+
+.about_image img {
+	width: 80%;
 }
 
 /* FOOTER */
 footer {
-	
 	width: 100%;
 	position: relative;
 	z-index: 5;
@@ -684,6 +702,7 @@ footer:after {
 
 .footer_upper > .container > div {
 	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 4rem;
 }
 
 .footer_info {
