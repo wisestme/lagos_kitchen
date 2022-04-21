@@ -28,3 +28,41 @@
 		margin-right: auto;
 	}
 }
+
+@media screen and (max-width: 950px) {
+	.footer_upper > .container > div > * {
+		width: 50%;
+	}
+
+	.footer_upper > .container > div > div:not(:last-child) {
+		padding: 0 1rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.footer_upper > .container > div {
+		flex-direction: column;
+	}
+
+	.footer_upper > .container > div > * {
+		width: 80%;
+	}
+
+	.footer_upper > .container > div > div:first-child {
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.footer_contacts {
+		flex-direction: column;
+	}
+
+	.footer_contacts > * {
+		margin-bottom: 1rem;
+	}
+
+	.footer_upper > .container > div > * {
+		width: 96%;
+	}
+}
