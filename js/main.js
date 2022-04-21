@@ -29,7 +29,7 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 700) {
+    if ($(this).scrollTop() > 900) {
         $("main").addClass("hero_sticky");
         // setTimeout(function() {
         //     $(".logo-holder").addClass("logo-sticky");
