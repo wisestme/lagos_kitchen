@@ -9,3 +9,22 @@
 	margin-right: 20px;
 }
 }
+
+@media screen and (max-width: 1250px) {
+	.footer_upper > .container > div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.footer_upper > .container > div > * {
+		width: 40%;
+		margin: 0 0 4rem 0;
+	}
+
+	.footer_upper > .container > div > div:last-child {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
