@@ -10,6 +10,16 @@
 }
 }
 
+@media screen and (max-width:1300px) {
+	.about_image {
+		margin-top: 150px;
+	}
+
+	.about_text p{
+		padding: 0 1rem;
+	}
+}
+
 @media screen and (max-width: 1250px) {
 	.footer_upper > .container > div {
 		display: flex;
@@ -26,6 +36,21 @@
 	.footer_upper > .container > div > div:last-child {
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+@media screen and (max-width:1120px) {
+	#about > .container > div {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	#about .container > div > * {
+		width: 90vw;
+		height: 50%;
+		position: relative;
 	}
 }
 

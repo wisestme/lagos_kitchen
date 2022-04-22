@@ -104,6 +104,20 @@ button {
 	cursor: pointer;
 }
 
+.main_heading {
+		font-family: 'Playball';
+    letter-spacing: 3px;
+    font-size: 34px;
+    color: var(--accent);
+		margin-bottom: 1rem;
+}
+
+.sub_heading {
+	text-transform: uppercase;
+    color: var(--on_background);
+    letter-spacing: 0.04em;
+}
+
 button:active {
 	position: relative;
 	top: 2px;
@@ -636,10 +650,11 @@ main {
 
 /* About */
 #about {
-	height: 100vh;
+	/* height: 100vh; */
 	z-index: 3;
 	position: relative;
-	background-color: #168000;
+	background-color: var(--background);
+	padding: 4rem 0;
 }
 
 #about .container {
@@ -653,7 +668,6 @@ main {
 #about .container > div > * {
 	width: 50vw;
 	height: 100%;
-	border: 2px solid yellow;
 	padding: 0 2rem;
 }
 
@@ -661,16 +675,40 @@ main {
 	align-items: center;
 }
 
-.swiper-wrapper {
+.about_text p{
+	font-size: 18px;
+	line-height: 2rem;
+	letter-spacing: 1px;
+	color: var(--on_background);
+}
+
+.about_text a {
+	font-size: 17px;
+	padding: 10px 15px;
+	display: inline-table;
+	font-weight: bold;
+	font-family: 'Playball', cursive;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	transition: all 200ms linear;
+	text-transform: uppercase;
+	color: var(--accent);
+	text-decoration: none;
+}
+
+.about_text a:hover {
+	transform: scale(1.2);
+}
+/* .swiper-wrapper {
 	border: 2px solid white;
 }
 .about_swiper {
 	border: 2px solid blue;
-}
+} */
 
 .about_image .swiper-slide {
 	width: 90%;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 .about_image img {
