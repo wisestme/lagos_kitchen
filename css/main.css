@@ -92,6 +92,10 @@ body{
 	display: none;
 }
 
+.screen_reader_table {
+	opacity: 0;
+}
+
 button {
 	background-color: var(--accent);
 	padding: 0.5rem 1rem;
@@ -104,7 +108,8 @@ button {
 	cursor: pointer;
 }
 
-.main_heading {
+.main_heading,
+th {
 		font-family: 'Playball';
     letter-spacing: 3px;
     font-size: 34px;
@@ -770,6 +775,17 @@ main {
 
 #work_hours .text h3 {
 	color: var(--on_primary);
+}
+
+table {
+	margin: 2rem auto;
+	padding: 2px;
+	width: 80%;
+}
+
+table td {
+	margin-bottom: 2rem;
+	font-size: 20px;
 }
 
 /* FOOTER */
