@@ -654,7 +654,7 @@ main {
 	z-index: 3;
 	position: relative;
 	background-color: var(--background);
-	padding: 4rem 0;
+	padding: 8rem 0;
 }
 
 #about .container {
@@ -713,6 +713,63 @@ main {
 
 .about_image img {
 	width: 90%;
+}
+
+/* Work Hours */
+#work_hours {
+	padding: 1rem 0;
+    color: #fff;
+    overflow: hidden;
+		width: 100vw;
+    position: relative;
+    padding: 90px 0;
+    /* background: #fff; */
+		height: 100vh;
+}
+
+.media_container {
+	/* height: 150%;
+    top: -25%; */
+		position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video_container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	line-height: 0;
+	width: 100%;
+}
+
+#work_hours video {
+	width: 100%;
+}
+
+#work_hours .overlay {
+	opacity: 0.8;
+}
+
+#work_hours .text {
+	padding-top: 4rem;
+	position: absolute;
+	top: 0;
+	z-index: 5;
+	text-align: center;
+	width: 100%;
+}
+
+#work_hours h2 {
+	font-size: 50px;
+	letter-spacing: 3px;
+}
+
+#work_hours .text h3 {
+	color: var(--on_primary);
 }
 
 /* FOOTER */
