@@ -134,3 +134,15 @@ var swiper = new Swiper('.hero_image', {
         clickable: true
     },
 });
+
+// About Slider
+var swiper = new Swiper('.about_swiper', {
+    effect: 'flip',
+    speed: 1500,
+    autoplay: true,
+    grabCursor: true,
+    cubeEffect: {
+        shadow: false
+    },
+    
+});

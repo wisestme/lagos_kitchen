@@ -647,19 +647,34 @@ main {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+	width: 100vw;
 }
 
 #about .container > div > * {
-	width: 50%;
+	width: 50vw;
 	height: 100%;
+	border: 2px solid yellow;
+	padding: 0 2rem;
 }
 
 #about .container > div {
 	align-items: center;
 }
 
+.swiper-wrapper {
+	border: 2px solid white;
+}
+.about_swiper {
+	border: 2px solid blue;
+}
+
+.about_image .swiper-slide {
+	width: 90%;
+	border: 2px solid red;
+}
+
 .about_image img {
-	width: 80%;
+	width: 90%;
 }
 
 /* FOOTER */
