@@ -52,6 +52,11 @@
 		height: 50%;
 		position: relative;
 	}
+
+	.about_text p{
+		max-width: 600px;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (max-width: 950px) {
@@ -65,6 +70,9 @@
 }
 
 @media screen and (max-width: 800px) {
+	#about .container > div > * {
+		width: 98vw;
+	}
 	.footer_upper > .container > div {
 		flex-direction: column;
 	}
@@ -89,5 +97,9 @@
 
 	.footer_upper > .container > div > * {
 		width: 96%;
+	}
+
+	.about_text p{
+		padding: 0;
 	}
 }
