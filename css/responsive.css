@@ -57,6 +57,20 @@
 		max-width: 600px;
 		margin: 0 auto;
 	}
+
+	#work_hours h2 {
+		font-size: 40px;
+	}
+
+	table {
+		width: 90%;
+	}
+
+	th {
+    letter-spacing: 3px;
+    font-size: 26px;
+    margin-bottom: 1rem;
+}
 }
 
 @media screen and (max-width: 950px) {
@@ -67,6 +81,17 @@
 	.footer_upper > .container > div > div:not(:last-child) {
 		padding: 0 1rem;
 	}
+
+	table {
+		width: 98%;
+	}
+
+	th {
+    
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
 }
 
 @media screen and (max-width: 800px) {
